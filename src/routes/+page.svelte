@@ -6,10 +6,6 @@
 	});
 </script>
 
-<head>
-	<title>Join Artify</title>
-</head>
-
 <section id="introduction">
 	<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestiae.</h1>
 </section>
@@ -24,6 +20,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 
 	#introduction h1 {
@@ -36,10 +34,14 @@
 		padding-top: 60px;
 		background-color: var(--green);
 		height: 950px;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 	#jobs {
 		padding-top: 60px;
 		background-color: var(--blue);
 		height: 950px;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 </style>

@@ -2,19 +2,36 @@
 </script>
 
 <div class="navbar">
-	<h1><a href="#introduction">Artify</a></h1>
 	<nav>
+		<a href="/" class="logo">
+			<img src="/favicon.png" alt="" />
+			<h1>Join Artify</h1>
+		</a>
 		<ul>
-			<li><a href="#benefits">Benefits</a></li>
-			<li><a href="#jobs">Jobs</a></li>
-			<li><a href="#about-us">About Us</a></li>
+			<li><a href="/#benefits">Benefits</a></li>
+			<li><a href="/#jobs">Jobs</a></li>
+			<li><a href="/#about-us">About Us</a></li>
 		</ul>
+		<a class="apply" href="/apply"><button>Apply</button></a>
 	</nav>
-	<a class="apply" href="s"><button>Apply</button></a>
 </div>
 
 <style>
-	.navbar {
+	.logo {
+		display: flex;
+		align-items: center;
+		color: black;
+		font-weight: 700;
+	}
+	.logo:visited {
+		color: black;
+	}
+	img {
+		width: 50px;
+		padding-right: 5px;
+	}
+
+	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -30,12 +47,8 @@
 		box-sizing: border-box;
 		font-weight: 500;
 		color: var(--violet);
-	}
-
-	nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		user-select: none;
+		text-align: center;
 	}
 
 	li {
