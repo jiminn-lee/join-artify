@@ -1,11 +1,12 @@
 <script>
+	import whiteWaves from '$lib/assets/whiteWaves.svg';
 </script>
 
 <div class="navbar">
 	<nav>
 		<a href="/" class="logo">
 			<img src="/favicon.png" alt="" />
-			<h1>Join Artify</h1>
+			<h1>Join <span>Artify</span></h1>
 		</a>
 		<ul>
 			<li><a href="/#benefits">Benefits</a></li>
@@ -14,21 +15,38 @@
 		</ul>
 		<a class="apply" href="/apply"><button>Apply</button></a>
 	</nav>
+	<img src={whiteWaves} alt="" class="wave" />
 </div>
 
 <style>
+	.wave {
+		width: 100%;
+		height: 20px;
+	}
+
 	.logo {
 		display: flex;
 		align-items: center;
-		color: black;
+		color: var(--grey);
 		font-weight: 700;
+		font-size: 1.5rem;
+	}
+
+	.logo span {
+		color: var(--red);
 	}
 	.logo:visited {
-		color: black;
+		color: var(--grey);
 	}
 	img {
 		width: 50px;
 		padding-right: 5px;
+	}
+
+	.navbar {
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 
 	nav {
@@ -38,9 +56,7 @@
 		padding-top: 12px;
 		padding-bottom: 12px;
 		font-size: 1.2rem;
-		position: fixed;
-		top: 0;
-		width: 100%;
+
 		padding-left: 20%;
 		padding-right: 20%;
 		background-color: white;
@@ -60,6 +76,11 @@
 
 	a {
 		text-decoration: none;
+		transition: 0.2s;
+	}
+
+	li a:hover {
+		color: var(--violet-dark);
 	}
 
 	a:visited {
@@ -75,5 +96,14 @@
 		font-size: 1.2rem;
 		padding: 5px 30px 5px 30px;
 		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	button:hover {
+		background-color: var(--red-dark);
+	}
+
+	button:active {
+		transform: translateY(2px);
 	}
 </style>
