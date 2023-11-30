@@ -11,6 +11,10 @@
 	</div>
 </div>
 
+<head>
+	<title>Join Artify - Apply</title>
+</head>
+
 <style>
 	.apply {
 		display: flex;
