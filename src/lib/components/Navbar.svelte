@@ -1,20 +1,23 @@
 <script>
 	import whiteWaves from '$lib/assets/whiteWaves.svg';
+	import MobileNavbar from './MobileNavbar.svelte';
+
+	let mobileNavBar;
 </script>
 
 <div class="nav-container">
-	<nav>
+	<nav class="nav">
 		<a href="/" class="logo">
 			<img src="/favicon.png" alt="" />
 			<h1>Join <span>Artify</span></h1>
 		</a>
-		<ul>
-			<li><a href="/#benefits">Benefits</a></li>
-			<li><a href="/#jobs">Jobs</a></li>
-			<li><a href="/#about-us">About Us</a></li>
+		<ul class="nav-menu">
+			<li class="nav-menu-items"><a href="/#benefits">Benefits</a></li>
+			<li class="nav-menu-items"><a href="/#jobs">Jobs</a></li>
+			<li class="nav-menu-items"><a href="/#about-us">About Us</a></li>
 		</ul>
-		<a href="/apply"><button class="apply">Apply</button></a>
-		<button class="bars">
+		<a href="/apply"><button class="btn" id="apply">Apply</button></a>
+		<button class="bars" on:click={mobileNavBar.toggleMobileNav}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -33,6 +36,7 @@
 	</nav>
 	<img src={whiteWaves} alt="" class="wave" />
 </div>
+<MobileNavbar bind:this={mobileNavBar} />
 
 <style>
 	.bars {
@@ -71,9 +75,10 @@
 	.nav-container {
 		position: fixed;
 		width: 100%;
+		z-index: 9999;
 	}
 
-	nav {
+	.nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -92,45 +97,11 @@
 		height: 64px;
 	}
 
-	li {
+	.nav-menu-items {
 		list-style: none;
 		display: inline-block;
 		padding-left: 20px;
 		padding-right: 20px;
-	}
-
-	a {
-		text-decoration: none;
-		transition: 0.2s;
-		color: var(--violet);
-	}
-
-	li a:hover {
-		color: var(--violet-dark);
-	}
-
-	a:visited {
-		color: var(--violet);
-	}
-
-	.apply {
-		border: none;
-		background-color: var(--red);
-		color: white;
-		border-radius: 14px;
-		width: 100%;
-		font-size: 1.2rem;
-		padding: 5px 30px 5px 30px;
-		cursor: pointer;
-		transition: 0.2s;
-	}
-
-	.apply:hover {
-		background-color: var(--red-dark);
-	}
-
-	.apply:active {
-		transform: translateY(2px);
 	}
 
 	@media (max-width: 1536px) {
@@ -138,7 +109,7 @@
 
 	/* xl */
 	@media (max-width: 1280px) {
-		nav {
+		.nav {
 			padding-left: 10%;
 			padding-right: 10%;
 		}
@@ -146,7 +117,7 @@
 
 	/* lg */
 	@media (max-width: 1024px) {
-		nav {
+		.nav {
 			padding-left: 5%;
 			padding-right: 5%;
 		}
@@ -154,8 +125,8 @@
 
 	/* md */
 	@media (max-width: 768px) {
-		nav,
-		.apply {
+		.nav,
+		#apply {
 			font-size: 1rem;
 		}
 		.logo {
@@ -168,8 +139,8 @@
 
 	/* sm */
 	@media (max-width: 640px) {
-		ul,
-		.apply {
+		.nav-menu,
+		#apply {
 			display: none;
 		}
 		.bars {

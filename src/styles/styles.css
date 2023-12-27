@@ -31,3 +31,37 @@ svg {
 	max-width: 100%;
 	user-select: none;
 }
+
+.btn {
+	border: none;
+	background-color: var(--red);
+	color: white;
+	border-radius: 14px;
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 5px 30px 5px 30px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn:hover {
+	background-color: var(--red-dark);
+}
+
+.btn:active {
+	transform: translateY(2px);
+}
+
+a {
+	text-decoration: none;
+	transition: 0.2s;
+	color: var(--violet);
+}
+
+a:hover {
+	color: var(--violet-dark);
+}
+
+a:visited {
+	color: var(--violet);
+}
