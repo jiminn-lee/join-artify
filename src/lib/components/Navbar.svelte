@@ -2,7 +2,7 @@
 	import whiteWaves from '$lib/assets/whiteWaves.svg';
 </script>
 
-<div class="navbar">
+<div class="nav-container">
 	<nav>
 		<a href="/" class="logo">
 			<img src="/favicon.png" alt="" />
@@ -13,12 +13,37 @@
 			<li><a href="/#jobs">Jobs</a></li>
 			<li><a href="/#about-us">About Us</a></li>
 		</ul>
-		<a class="apply" href="/apply"><button>Apply</button></a>
+		<a href="/apply"><button class="apply">Apply</button></a>
+		<button class="bars">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+				class="w-6 h-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+				/>
+			</svg>
+		</button>
 	</nav>
 	<img src={whiteWaves} alt="" class="wave" />
 </div>
 
 <style>
+	.bars {
+		width: 40px;
+		background-color: rgb(255, 255, 255, 0);
+		color: var(--grey);
+		border: none;
+		cursor: pointer;
+		display: none;
+	}
+
 	.wave {
 		width: 100%;
 		height: 20px;
@@ -43,9 +68,8 @@
 		padding-right: 5px;
 	}
 
-	.navbar {
+	.nav-container {
 		position: fixed;
-		top: 0;
 		width: 100%;
 	}
 
@@ -65,6 +89,7 @@
 		color: var(--violet);
 		user-select: none;
 		text-align: center;
+		height: 64px;
 	}
 
 	li {
@@ -88,7 +113,7 @@
 		color: var(--violet);
 	}
 
-	button {
+	.apply {
 		border: none;
 		background-color: var(--red);
 		color: white;
@@ -100,11 +125,59 @@
 		transition: 0.2s;
 	}
 
-	button:hover {
+	.apply:hover {
 		background-color: var(--red-dark);
 	}
 
-	button:active {
+	.apply:active {
 		transform: translateY(2px);
+	}
+
+	@media (max-width: 1536px) {
+	}
+
+	/* xl */
+	@media (max-width: 1280px) {
+		nav {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	}
+
+	/* lg */
+	@media (max-width: 1024px) {
+		nav {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	}
+
+	/* md */
+	@media (max-width: 768px) {
+		nav,
+		.apply {
+			font-size: 1rem;
+		}
+		.logo {
+			font-size: 1.3rem;
+		}
+		img {
+			width: 40px;
+		}
+	}
+
+	/* sm */
+	@media (max-width: 640px) {
+		ul,
+		.apply {
+			display: none;
+		}
+		.bars {
+			display: block;
+		}
+	}
+
+	/* xs */
+	@media (max-width: 475px) {
 	}
 </style>
