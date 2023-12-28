@@ -2,18 +2,16 @@
 	import greenWaves from '$lib/assets/greenWaves.svg';
 </script>
 
-<section id="benefits">Benefits</section>
-<img src={greenWaves} alt="" class="wave" id="green" />
+<section id="benefits" />
+<img src={greenWaves} alt="" class="wave" />
 
 <style>
 	.wave {
 		width: 100%;
 		height: 60px;
-	}
-
-	#green {
 		background-color: var(--blue);
 	}
+
 	#benefits {
 		padding-top: 60px;
 		background-color: var(--green);

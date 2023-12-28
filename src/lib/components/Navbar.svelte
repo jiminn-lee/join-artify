@@ -7,8 +7,8 @@
 
 <div class="nav-container">
 	<nav class="nav">
-		<a href="/" class="logo">
-			<img src="/favicon.png" alt="" />
+		<a href="/" class="logo-container">
+			<img src="/favicon.png" alt="" class="logo" />
 			<h1>Join <span>Artify</span></h1>
 		</a>
 		<ul class="nav-menu">
@@ -39,39 +39,6 @@
 <MobileNavbar bind:dialog={mobileNavBar} />
 
 <style>
-	.bars {
-		width: 40px;
-		background-color: rgb(255, 255, 255, 0);
-		color: var(--grey);
-		border: none;
-		cursor: pointer;
-		display: none;
-	}
-
-	.wave {
-		width: 100%;
-		height: 20px;
-	}
-
-	.logo {
-		display: flex;
-		align-items: center;
-		color: var(--grey);
-		font-weight: 700;
-		font-size: 1.5rem;
-	}
-
-	.logo span {
-		color: var(--red);
-	}
-	.logo:visited {
-		color: var(--grey);
-	}
-	img {
-		width: 50px;
-		padding-right: 5px;
-	}
-
 	.nav-container {
 		position: fixed;
 		width: 100%;
@@ -84,7 +51,6 @@
 		padding-top: 12px;
 		padding-bottom: 12px;
 		font-size: 1.2rem;
-
 		padding-left: 20%;
 		padding-right: 20%;
 		background-color: white;
@@ -103,7 +69,36 @@
 		padding-right: 20px;
 	}
 
-	@media (max-width: 1536px) {
+	.logo-container {
+		display: flex;
+		align-items: center;
+		color: var(--grey);
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+	.logo-container span {
+		color: var(--red);
+	}
+	.logo-container:visited {
+		color: var(--grey);
+	}
+	.logo {
+		width: 50px;
+		padding-right: 5px;
+	}
+
+	.bars {
+		width: 40px;
+		background-color: rgb(255, 255, 255, 0);
+		color: var(--grey);
+		border: none;
+		cursor: pointer;
+		display: none;
+	}
+
+	.wave {
+		width: 100%;
+		height: 20px;
 	}
 
 	/* xl */
@@ -128,10 +123,10 @@
 		#apply {
 			font-size: 1rem;
 		}
-		.logo {
+		.logo-container {
 			font-size: 1.3rem;
 		}
-		img {
+		.logo {
 			width: 40px;
 		}
 	}

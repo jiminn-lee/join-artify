@@ -3,6 +3,7 @@
 	import Introduction from '../lib/components/Introduction.svelte';
 	import Benefits from '../lib/components/Benefits.svelte';
 	import Jobs from '../lib/components/Jobs.svelte';
+	import AboutUs from '../lib/components/AboutUs.svelte';
 
 	onMount(() => {
 		window.addEventListener('hashchange', () => window.history.pushState({}, '', '/'), {});
@@ -16,7 +17,6 @@
 <Introduction />
 <Benefits />
 <Jobs />
-
-<!-- <section id="about-us" /> -->
+<AboutUs />
 
 <style></style>

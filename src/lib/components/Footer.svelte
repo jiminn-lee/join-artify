@@ -11,7 +11,8 @@
 	.wave {
 		width: 100%;
 		height: 20px;
-		background-color: red;
+		background-color: rgba(255, 0, 0, 0);
+		color: aqua;
 		transform: rotate(180deg);
 	}
 
@@ -21,5 +22,10 @@
 		padding-right: 20%;
 		padding-top: 40px;
 		padding-bottom: 12px;
+		background-color: white;
+	}
+
+	.footer-container {
+		margin-top: -20px;
 	}
 </style>
