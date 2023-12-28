@@ -98,12 +98,5 @@
 
 	/* sm */
 	@media (max-width: 640px) {
-		ul,
-		.apply {
-			display: none;
-		}
-		.bars {
-			display: block;
-		}
 	}
 </style>

@@ -17,7 +17,7 @@
 			<li class="nav-menu-items"><a href="/#about-us">About Us</a></li>
 		</ul>
 		<a href="/apply"><button class="btn" id="apply">Apply</button></a>
-		<button class="bars" on:click={mobileNavBar.toggleMobileNav}>
+		<button class="bars" on:click={() => mobileNavBar.showModal()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -36,7 +36,7 @@
 	</nav>
 	<img src={whiteWaves} alt="" class="wave" />
 </div>
-<MobileNavbar bind:this={mobileNavBar} />
+<MobileNavbar bind:dialog={mobileNavBar} />
 
 <style>
 	.bars {
@@ -75,7 +75,6 @@
 	.nav-container {
 		position: fixed;
 		width: 100%;
-		z-index: 9999;
 	}
 
 	.nav {

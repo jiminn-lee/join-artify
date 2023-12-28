@@ -4,14 +4,14 @@
 
 <div class="footer-container">
 	<img src={whiteWaves} alt="" class="wave" />
-	<div class="footer">testddddddddd</div>
+	<div class="footer" />
 </div>
 
 <style>
 	.wave {
 		width: 100%;
 		height: 20px;
-		background-color: var(--blue);
+		background-color: red;
 		transform: rotate(180deg);
 	}
 

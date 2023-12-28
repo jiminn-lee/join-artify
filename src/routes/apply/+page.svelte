@@ -33,4 +33,17 @@
 		width: 100vh;
 		height: 100vh;
 	}
+
+	@media (max-width: 768px) {
+		iframe {
+			width: 80vh;
+		}
+	}
+
+	/* xs */
+	@media (max-width: 475px) {
+		iframe {
+			width: 50vh;
+		}
+	}
 </style>
