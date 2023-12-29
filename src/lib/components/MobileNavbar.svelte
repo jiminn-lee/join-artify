@@ -31,8 +31,8 @@
 				<li class="mobile-nav-menu-items">
 					<a href="/#jobs" on:click={() => dialog.close()}>Jobs</a>
 				</li>
-				<a href="/apply"
-					><button class="btn" id="mobile-apply" on:click={() => dialog.close()}>Apply</button></a
+				<a href="/apply" id="apply"
+					><button class="btn" on:click={() => dialog.close()}>Apply</button></a
 				>
 			</ul>
 		</nav>
@@ -87,6 +87,9 @@
 		font-weight: 700;
 		font-size: 1.5rem;
 	}
+	.logo:hover {
+		text-decoration: none;
+	}
 	.logo:visited {
 		color: var(--grey);
 	}
@@ -96,5 +99,8 @@
 	img {
 		width: 50px;
 		padding-right: 5px;
+	}
+	#apply:hover {
+		text-decoration: none;
 	}
 </style>

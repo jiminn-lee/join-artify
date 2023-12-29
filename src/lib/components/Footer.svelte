@@ -30,32 +30,24 @@
 						<a
 							href="https://www.instagram.com/Artify4kids"
 							target="_blank"
-							rel="noopener noreferrer"
-							class="logo-container">Instagram</a
+							rel="noopener noreferrer">Instagram</a
 						>
 					</li>
 					<li class="special-item" id="twitter">
-						<a
-							href="https://twitter.com/artify4kids"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="logo-container">X (Twitter)</a
+						<a href="https://twitter.com/artify4kids" target="_blank" rel="noopener noreferrer"
+							>X (Twitter)</a
 						>
 					</li>
 					<li class="special-item" id="linkedin">
 						<a
 							href="https://www.linkedin.com/company/artify4kids/"
 							target="_blank"
-							rel="noopener noreferrer"
-							class="logo-container">LinkedIn</a
+							rel="noopener noreferrer">LinkedIn</a
 						>
 					</li>
 					<li class="special-item" id="tiktok">
-						<a
-							href="https://www.tiktok.com/@artify6"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="logo-container">TikTok</a
+						<a href="https://www.tiktok.com/@artify6" target="_blank" rel="noopener noreferrer"
+							>TikTok</a
 						>
 					</li>
 				</ul>
@@ -79,7 +71,7 @@
 				rel="noopener noreferrer">Jimin L.</a
 			>
 			&
-			<a href="" target="_blank" rel="noopener noreferrer">Sam M.</a>
+			<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Sam M.</a>
 		</p>
 	</div>
 </div>
@@ -95,7 +87,7 @@
 		margin-top: -20px;
 	}
 	.footer {
-		height: 330px;
+		height: 300px;
 		padding-left: 20%;
 		padding-right: 20%;
 		padding-top: 40px;
@@ -110,6 +102,7 @@
 	.column-container {
 		display: flex;
 		flex-direction: row;
+		margin-bottom: 20px;
 	}
 	.column {
 		width: 100%;
@@ -119,6 +112,7 @@
 		align-items: center;
 		margin-bottom: 30px;
 		user-select: none;
+		color: var(--grey);
 	}
 	h1 {
 		font-weight: 700;
@@ -137,18 +131,6 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 		color: var(--violet);
-	}
-	a {
-		color: var(--violet);
-	}
-	a:visited {
-		color: inherit;
-	}
-	a:hover {
-		text-decoration-line: underline;
-		text-decoration-style: wavy;
-		-webkit-text-decoration-line: underline;
-		-webkit-text-decoration-style: wavy;
 	}
 	.special-item {
 		list-style: none;
@@ -184,14 +166,16 @@
 		border-top: 1px solid;
 		border-radius: 5px;
 		width: 60%;
-		margin-top: 0px;
+		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	p {
 		font-size: 0.8rem;
 		color: var(--red);
 	}
-
+	p a {
+		color: var(--violet);
+	}
 	@media (max-width: 1280px) {
 		.footer {
 			padding-left: 10%;

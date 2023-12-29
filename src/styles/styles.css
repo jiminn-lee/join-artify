@@ -53,8 +53,25 @@ svg {
 	transform: translateY(2px);
 }
 
+.btn a:hover {
+	text-decoration: none !important;
+}
+
 a {
 	text-decoration: none;
+	color: var(--violet);
+}
+
+a:hover {
+	color: inherit;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	-webkit-text-decoration-line: underline;
+	-webkit-text-decoration-style: wavy;
+}
+
+a:active {
+	color: inherit;
 }
 
 a:visited {

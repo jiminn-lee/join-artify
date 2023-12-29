@@ -16,7 +16,7 @@
 			<li class="nav-menu-items"><a href="/#benefits">Benefits</a></li>
 			<li class="nav-menu-items"><a href="/#jobs">Jobs</a></li>
 		</ul>
-		<a href="/apply"><button class="btn" id="apply">Apply</button></a>
+		<a href="/apply" id="apply"><button class="btn">Apply</button></a>
 		<button class="bars" on:click={() => mobileNavBar.showModal()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +74,8 @@
 		font-weight: 700;
 		font-size: 1.5rem;
 	}
-	.logo-container:visited {
-		color: var(--grey);
+	.logo-container:hover {
+		text-decoration: none;
 	}
 	.logo-container span {
 		color: var(--red);
@@ -83,6 +83,9 @@
 	.logo {
 		width: 50px;
 		padding-right: 5px;
+	}
+	#apply:hover {
+		text-decoration: none !important;
 	}
 	.bars {
 		width: 40px;
@@ -116,7 +119,7 @@
 	/* md */
 	@media (max-width: 768px) {
 		.nav,
-		#apply {
+		#apply button {
 			font-size: 1rem;
 		}
 		.logo-container {
