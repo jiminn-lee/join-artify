@@ -9,7 +9,7 @@
 </script>
 
 <section id="introduction">
-	<div class="introduction-container">
+	<div class="text-container">
 		<br /> <br />
 		<h1>
 			<span id="span-1"> Create, Inspire, Transform </span>
@@ -21,7 +21,7 @@
 		<p>Be a catalyst for creativity, celebrate diversity, and empower young artists with us</p>
 	</div>
 </section>
-<img src={yellowWaves} alt="" class="wave" id="yellow" />
+<img src={yellowWaves} alt="" class="wave" />
 
 <style>
 	#introduction {
@@ -33,38 +33,33 @@
 		padding-left: 20%;
 		padding-right: 20%;
 	}
-
-	.introduction-container {
+	.text-container {
 		text-align: left;
 		width: 50%;
 		user-select: none;
 		font-size: 1.2rem;
 	}
-
 	#span-1 {
 		font-weight: 750;
 		font-size: 2.5rem;
 		line-height: 1.2em;
 	}
-
 	#span-2 {
 		font-weight: 600;
 		font-size: 2rem;
 		line-height: 1.2em;
 	}
-
 	#changing-word {
-		text-decoration: underline wavy;
+		text-decoration-line: underline;
+		text-decoration-style: wavy;
+		-webkit-text-decoration-line: underline;
+		-webkit-text-decoration-style: wavy;
 		color: var(--violet);
 	}
-
-	#yellow {
-		background-color: var(--green);
-	}
-
 	.wave {
 		width: 100%;
 		height: 60px;
+		background-color: var(--green);
 	}
 
 	/* xl */
@@ -91,7 +86,7 @@
 		#span-2 {
 			font-size: 1.4rem;
 		}
-		.introduction-container {
+		.text-container {
 			font-size: 1rem;
 		}
 	}

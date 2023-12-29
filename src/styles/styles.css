@@ -5,7 +5,6 @@
 	--grey: #28272e;
 	--blue: #739fed;
 	--violet: #7560c7;
-	--violet-dark: #563cba;
 	--red: #ee868b;
 	--red-dark: #ec686f;
 	--yellow: #f8efb2;
@@ -42,6 +41,8 @@ svg {
 	padding: 5px 30px 5px 30px;
 	cursor: pointer;
 	transition: 0.2s;
+	display: flex;
+	justify-content: center;
 }
 
 .btn:hover {
@@ -54,14 +55,4 @@ svg {
 
 a {
 	text-decoration: none;
-	transition: 0.2s;
-	color: var(--violet);
-}
-
-a:hover {
-	color: var(--violet-dark);
-}
-
-a:visited {
-	color: var(--violet);
 }

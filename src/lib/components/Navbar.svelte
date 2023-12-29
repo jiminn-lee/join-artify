@@ -42,8 +42,8 @@
 	.nav-container {
 		position: fixed;
 		width: 100%;
+		z-index: 9999;
 	}
-
 	.nav {
 		display: flex;
 		justify-content: space-between;
@@ -61,14 +61,15 @@
 		text-align: center;
 		height: 64px;
 	}
-
 	.nav-menu-items {
 		list-style: none;
 		display: inline-block;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
+	a:visited {
+		color: var(--violet);
+	}
 	.logo-container {
 		display: flex;
 		align-items: center;
@@ -76,17 +77,16 @@
 		font-weight: 700;
 		font-size: 1.5rem;
 	}
-	.logo-container span {
-		color: var(--red);
-	}
 	.logo-container:visited {
 		color: var(--grey);
+	}
+	.logo-container span {
+		color: var(--red);
 	}
 	.logo {
 		width: 50px;
 		padding-right: 5px;
 	}
-
 	.bars {
 		width: 40px;
 		background-color: rgb(255, 255, 255, 0);
@@ -95,7 +95,6 @@
 		cursor: pointer;
 		display: none;
 	}
-
 	.wave {
 		width: 100%;
 		height: 20px;

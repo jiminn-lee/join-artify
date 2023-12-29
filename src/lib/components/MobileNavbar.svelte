@@ -40,36 +40,6 @@
 </dialog>
 
 <style>
-	.close {
-		width: 35px;
-		background-color: rgb(255, 255, 255, 0);
-		color: var(--grey);
-		border: none;
-		cursor: pointer;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-
-	.logo {
-		display: flex;
-		align-items: center;
-		color: var(--grey);
-		font-weight: 700;
-		font-size: 1.5rem;
-	}
-
-	.logo span {
-		color: var(--red);
-	}
-	.logo:visited {
-		color: var(--grey);
-	}
-	img {
-		width: 50px;
-		padding-right: 5px;
-	}
-
 	dialog {
 		width: 50%;
 		height: 40%;
@@ -78,11 +48,9 @@
 		border-radius: 40px;
 		user-select: none;
 	}
-
 	dialog::backdrop {
 		backdrop-filter: blur(5px);
 	}
-
 	.mobile-nav-container {
 		z-index: 999;
 		width: 100%;
@@ -93,7 +61,6 @@
 		justify-content: center;
 		align-items: center;
 	}
-
 	.mobile-nav-menu {
 		list-style: none;
 		padding: 0;
@@ -101,5 +68,32 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 1.2rem;
+	}
+	.close {
+		width: 35px;
+		background-color: rgb(255, 255, 255, 0);
+		color: var(--grey);
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		color: var(--grey);
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+	.logo:visited {
+		color: var(--grey);
+	}
+	.logo span {
+		color: var(--red);
+	}
+	img {
+		width: 50px;
+		padding-right: 5px;
 	}
 </style>
