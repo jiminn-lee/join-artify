@@ -1,20 +1,20 @@
 <script>
-	import greenWaves from '$lib/assets/greenWaves.svg';
+	import blueWaves from '$lib/assets/blueWaves.svg';
 </script>
 
 <section id="benefits" />
-<img src={greenWaves} alt="" class="wave" />
+<img src={blueWaves} alt="" class="wave" />
 
 <style>
 	.wave {
 		width: 100%;
 		height: 60px;
-		background-color: var(--blue);
+		background-color: var(--violet);
 	}
 
 	#benefits {
 		padding-top: 60px;
-		background-color: var(--green);
+		background-color: var(--blue);
 		height: 900px;
 		padding-left: 20%;
 		padding-right: 20%;

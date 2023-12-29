@@ -15,8 +15,8 @@
 </head>
 
 <Introduction />
+<AboutUs />
 <Benefits />
 <Jobs />
-<AboutUs />
 
 <style></style>

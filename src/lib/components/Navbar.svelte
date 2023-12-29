@@ -12,9 +12,9 @@
 			<h1>Join <span>Artify</span></h1>
 		</a>
 		<ul class="nav-menu">
+			<li class="nav-menu-items"><a href="/#about-us">About Us</a></li>
 			<li class="nav-menu-items"><a href="/#benefits">Benefits</a></li>
 			<li class="nav-menu-items"><a href="/#jobs">Jobs</a></li>
-			<li class="nav-menu-items"><a href="/#about-us">About Us</a></li>
 		</ul>
 		<a href="/apply"><button class="btn" id="apply">Apply</button></a>
 		<button class="bars" on:click={() => mobileNavBar.showModal()}>
@@ -56,19 +56,16 @@
 		background-color: white;
 		box-sizing: border-box;
 		font-weight: 500;
-		color: var(--violet);
 		user-select: none;
 		text-align: center;
 		height: 64px;
 	}
 	.nav-menu-items {
+		color: var(--violet);
 		list-style: none;
 		display: inline-block;
 		padding-left: 20px;
 		padding-right: 20px;
-	}
-	a:visited {
-		color: var(--violet);
 	}
 	.logo-container {
 		display: flex;

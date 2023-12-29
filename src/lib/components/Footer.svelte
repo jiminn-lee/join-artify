@@ -210,5 +210,18 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
+		h1 {
+			font-size: 1.2rem;
+		}
+		h2 {
+			font-size: 1rem;
+		}
+		.menu-item,
+		.special-item {
+			font-size: 0.8rem;
+		}
+		p {
+			font-size: 0.6rem;
+		}
 	}
 </style>

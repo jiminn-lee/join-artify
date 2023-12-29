@@ -23,13 +23,13 @@
 					<h1>Join <span>Artify</span></h1>
 				</a>
 				<li class="mobile-nav-menu-items">
+					<a href="/#about-us" on:click={() => dialog.close()}>About Us</a>
+				</li>
+				<li class="mobile-nav-menu-items">
 					<a href="/#benefits" on:click={() => dialog.close()}>Benefits</a>
 				</li>
 				<li class="mobile-nav-menu-items">
 					<a href="/#jobs" on:click={() => dialog.close()}>Jobs</a>
-				</li>
-				<li class="mobile-nav-menu-items">
-					<a href="/#about-us" on:click={() => dialog.close()}>About Us</a>
 				</li>
 				<a href="/apply"
 					><button class="btn" id="mobile-apply" on:click={() => dialog.close()}>Apply</button></a
@@ -68,6 +68,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 1.2rem;
+		color: var(--violet);
 	}
 	.close {
 		width: 35px;

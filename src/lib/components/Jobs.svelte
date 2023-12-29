@@ -47,14 +47,13 @@
 			</ul>
 		</div>
 	</div>
-	<h3>* These require less commitment</h3>
+	<p>* These require less commitment</p>
 </section>
-<img src={blueWaves} alt="" class="wave" />
 
 <style>
 	#jobs {
 		padding-top: 20px;
-		background-color: var(--blue);
+		background-color: var(--violet);
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -113,16 +112,11 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	h3 {
+	p {
 		color: var(--red-dark);
 		background-color: white;
 		padding: 5px;
 		border-radius: 5px;
 		font-weight: 500;
-	}
-	.wave {
-		width: 100%;
-		height: 60px;
-		background-color: var(--violet);
 	}
 </style>
