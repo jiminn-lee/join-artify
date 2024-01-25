@@ -23,11 +23,9 @@
 		height: 100%;
 		background-color: var(--yellow);
 	}
-
 	.iframe-container {
 		text-align: center;
 	}
-
 	iframe {
 		margin-top: 150px;
 		width: 100vh;
@@ -39,8 +37,6 @@
 			width: 80vh;
 		}
 	}
-
-	/* xs */
 	@media (max-width: 475px) {
 		iframe {
 			width: 50vh;

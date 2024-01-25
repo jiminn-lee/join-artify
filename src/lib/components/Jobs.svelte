@@ -48,11 +48,11 @@
 		</div>
 	</div>
 	<p>* These require less commitment</p>
+	<a href="/apply" id="apply"><button class="btn">Apply</button></a>
 </section>
 
 <style>
 	#jobs {
-		padding-top: 20px;
 		background-color: var(--violet);
 		height: 100%;
 		display: flex;
@@ -60,8 +60,7 @@
 		gap: 2rem;
 		justify-content: center;
 		align-items: center;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding: 60px 0;
 	}
 	.cards-container {
 		display: flex;
@@ -82,8 +81,7 @@
 	}
 	.asterisk {
 		color: var(--red-dark);
-		margin-left: 30px;
-		margin-top: 30px;
+		margin: 30px 0 0 30px;
 		font-size: 2rem;
 		user-select: none;
 	}
@@ -93,10 +91,8 @@
 		font-size: 1.8rem;
 		color: var(--red);
 		user-select: none;
-		padding-left: 25px;
-		padding-right: 25px;
-		margin-top: 80px;
-		margin-bottom: 50px;
+		padding: 0 25px;
+		margin: 80px 0 50px 0;
 	}
 	.special-h1 {
 		margin-top: 30px !important;
@@ -105,18 +101,18 @@
 		list-style: disc;
 		color: var(--violet);
 		font-size: 1.2rem;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 0 50px;
 	}
 	.card-list li {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin: 10px 0;
 	}
 	p {
+		text-align: center;
 		color: var(--red-dark);
 		background-color: white;
-		padding: 5px;
-		border-radius: 5px;
+		width: 300px;
 		font-weight: 500;
+		border-radius: 40px;
+		padding: 15px 0 15px 0;
 	}
 </style>

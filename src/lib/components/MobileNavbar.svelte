@@ -100,7 +100,4 @@
 		width: 50px;
 		padding-right: 5px;
 	}
-	#apply:hover {
-		text-decoration: none;
-	}
 </style>
