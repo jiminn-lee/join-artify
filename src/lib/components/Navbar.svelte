@@ -16,7 +16,12 @@
 			<li class="nav-menu-items"><a href="/#benefits">Benefits</a></li>
 			<li class="nav-menu-items"><a href="/#jobs">Jobs</a></li>
 		</ul>
-		<a href="/apply" id="apply"><button class="btn">Apply</button></a>
+		<a
+			href="https://docs.google.com/forms/d/e/1FAIpQLSewG6jXziVNkJgq_NvmdvO5BirikFQCoull85WH2_VK2Cec1g/viewform"
+			target="_blank"
+			rel="noopener noreferrer"
+			id="apply"><button class="btn">Apply</button></a
+		>
 		<button class="bars" on:click={() => mobileNavBar.showModal()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

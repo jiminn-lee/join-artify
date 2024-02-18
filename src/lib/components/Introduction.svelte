@@ -25,46 +25,46 @@
 	<div class="img-container">
 		<div class="slide" style="--t:60s" id="slide-1">
 			<div>
-				<img src="/photos/portrait-1.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-2.png" alt="" class="portrait" />
-				<img src="/photos/portrait-3.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-4.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-1.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-2.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-3.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-4.webp" alt="" class="portrait" />
 			</div>
 			<div>
-				<img src="/photos/portrait-1.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-2.png" alt="" class="portrait" />
-				<img src="/photos/portrait-3.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-4.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-1.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-2.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-3.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-4.webp" alt="" class="portrait" />
 			</div>
 		</div>
 		<div class="slide" style="--t:50s" id="slide-2">
 			<div>
-				<img src="/photos/portrait-5.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-6.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-7.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-8.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-9.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-5.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-6.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-7.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-8.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-9.webp" alt="" class="portrait" />
 			</div>
 			<div>
-				<img src="/photos/portrait-5.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-6.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-7.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-8.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-9.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-5.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-6.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-7.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-8.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-9.webp" alt="" class="portrait" />
 			</div>
 		</div>
 		<div class="slide" style="--t:60s" id="slide-3">
 			<div>
-				<img src="/photos/portrait-10.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-11.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-12.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-13.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-10.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-11.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-12.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-13.webp" alt="" class="portrait" />
 			</div>
 			<div>
-				<img src="/photos/portrait-10.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-11.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-12.jpg" alt="" class="portrait" />
-				<img src="/photos/portrait-13.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-10.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-11.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-12.webp" alt="" class="portrait" />
+				<img src="/photos/portrait-13.webp" alt="" class="portrait" />
 			</div>
 		</div>
 	</div>
@@ -72,57 +72,6 @@
 <img src={yellowWaves} alt="" class="wave" />
 
 <style>
-	.img-container {
-		width: 60%;
-		overflow: hidden;
-		height: 80vh;
-		-webkit-mask-image: linear-gradient(180deg, transparent, #fff, 20%, #fff 90%, transparent);
-		display: flex;
-		justify-content: center;
-		gap: 10px;
-		user-select: none;
-	}
-
-	.slide {
-		position: relative;
-	}
-
-	.slide div {
-		white-space: nowrap;
-		display: flex;
-		flex-direction: column;
-		animation: animate var(--t) linear infinite;
-		animation-delay: calc(var(--t) * -1);
-	}
-	.slide div:nth-child(2) {
-		animation: animate2 var(--t) linear infinite;
-		animation-delay: calc(var(--t) / -2);
-	}
-
-	@keyframes animate {
-		0% {
-			transform: translateY(100%);
-		}
-		100% {
-			transform: translateY(-100%);
-		}
-	}
-	@keyframes animate2 {
-		0% {
-			transform: translateY(0%);
-		}
-		100% {
-			transform: translateY(-200%);
-		}
-	}
-
-	.portrait {
-		width: 180px;
-		margin: 3%;
-		display: inline-flex;
-		border-radius: 14px;
-	}
-
 	#introduction {
 		background-color: var(--yellow);
 		color: var(--grey);
@@ -154,6 +103,57 @@
 		-webkit-text-decoration-line: underline;
 		-webkit-text-decoration-style: wavy;
 		color: var(--violet);
+	}
+	.img-container {
+		width: 60%;
+		overflow: hidden;
+		height: 80vh;
+		-webkit-mask-image: linear-gradient(180deg, transparent, #fff, 20%, #fff 90%, transparent);
+		display: flex;
+		justify-content: right;
+		gap: 10px;
+		padding-right: 10px;
+	}
+	.slide {
+		position: relative;
+	}
+	.slide div {
+		white-space: nowrap;
+		display: flex;
+		flex-direction: column;
+		animation: animate var(--t) linear infinite;
+		animation-delay: calc(var(--t) * -1);
+	}
+	.slide div:nth-child(2) {
+		animation: animate2 var(--t) linear infinite;
+		animation-delay: calc(var(--t) / -2);
+	}
+	.portrait {
+		width: 180px;
+		margin: 3%;
+		display: inline-flex;
+		border-radius: 14px;
+		user-select: none;
+		transition: 0.5s;
+	}
+	.portrait:hover {
+		transform: scale(105%);
+	}
+	@keyframes animate {
+		0% {
+			transform: translateY(100%);
+		}
+		100% {
+			transform: translateY(-100%);
+		}
+	}
+	@keyframes animate2 {
+		0% {
+			transform: translateY(0%);
+		}
+		100% {
+			transform: translateY(-200%);
+		}
 	}
 	.wave {
 		width: 100%;
@@ -187,13 +187,20 @@
 			font-size: 1rem;
 		}
 	}
-
 	@media (max-width: 640px) {
-		#slide-1 {
-			display: none;
-		}
 		#slide-3 {
 			display: none;
+		}
+	}
+	@media (max-width: 475px) {
+		#span-1 {
+			font-size: 1.8rem;
+		}
+		#span-2 {
+			font-size: 1rem;
+		}
+		.portrait {
+			width: 145px;
 		}
 	}
 </style>
