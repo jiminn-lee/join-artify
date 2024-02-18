@@ -1,13 +1,9 @@
 <script>
 	import yellowWaves from '$lib/assets/yellowWaves.svg';
-	import img1 from '$lib/images/01.jpg';
-	import img2 from '$lib/images/02.jpg';
-	import img3 from '$lib/images/03.jpg';
-	import img4 from '$lib/images/04.jpg';
-	import img5 from '$lib/images/05.jpg';
-	import img6 from '$lib/images/06.jpg';
+
 	let words = ['child', 'artist', 'innovator'];
 	let currentIndex = 0;
+
 	function updateWord() {
 		currentIndex = (currentIndex + 1) % words.length;
 	}
@@ -26,18 +22,107 @@
 		<br /><br />
 		<p>Be a catalyst for creativity, celebrate diversity, and empower young artists with us</p>
 	</div>
-	<div class="image-container">
-		<img src={img1} alt="" class="img-main" />
-		<img src={img2} alt="" class="img-small" id="small-1" />
-		<img src={img3} alt="" class="img-small" id="small-2" />
-		<img src={img4} alt="" class="img-small" id="small-3" />
-		<img src={img5} alt="" class="img-small" id="small-4" />
-		<img src={img6} alt="" class="img-small" id="small-5" />
+	<div class="img-container">
+		<div class="slide" style="--t:60s" id="slide-1">
+			<div>
+				<img src="/photos/portrait-1.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-2.png" alt="" class="portrait" />
+				<img src="/photos/portrait-3.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-4.jpg" alt="" class="portrait" />
+			</div>
+			<div>
+				<img src="/photos/portrait-1.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-2.png" alt="" class="portrait" />
+				<img src="/photos/portrait-3.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-4.jpg" alt="" class="portrait" />
+			</div>
+		</div>
+		<div class="slide" style="--t:50s" id="slide-2">
+			<div>
+				<img src="/photos/portrait-5.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-6.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-7.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-8.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-9.jpg" alt="" class="portrait" />
+			</div>
+			<div>
+				<img src="/photos/portrait-5.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-6.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-7.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-8.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-9.jpg" alt="" class="portrait" />
+			</div>
+		</div>
+		<div class="slide" style="--t:60s" id="slide-3">
+			<div>
+				<img src="/photos/portrait-10.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-11.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-12.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-13.jpg" alt="" class="portrait" />
+			</div>
+			<div>
+				<img src="/photos/portrait-10.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-11.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-12.jpg" alt="" class="portrait" />
+				<img src="/photos/portrait-13.jpg" alt="" class="portrait" />
+			</div>
+		</div>
 	</div>
 </section>
 <img src={yellowWaves} alt="" class="wave" />
 
 <style>
+	.img-container {
+		width: 60%;
+		overflow: hidden;
+		height: 80vh;
+		-webkit-mask-image: linear-gradient(180deg, transparent, #fff, 20%, #fff 90%, transparent);
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		user-select: none;
+	}
+
+	.slide {
+		position: relative;
+	}
+
+	.slide div {
+		white-space: nowrap;
+		display: flex;
+		flex-direction: column;
+		animation: animate var(--t) linear infinite;
+		animation-delay: calc(var(--t) * -1);
+	}
+	.slide div:nth-child(2) {
+		animation: animate2 var(--t) linear infinite;
+		animation-delay: calc(var(--t) / -2);
+	}
+
+	@keyframes animate {
+		0% {
+			transform: translateY(100%);
+		}
+		100% {
+			transform: translateY(-100%);
+		}
+	}
+	@keyframes animate2 {
+		0% {
+			transform: translateY(0%);
+		}
+		100% {
+			transform: translateY(-200%);
+		}
+	}
+
+	.portrait {
+		width: 180px;
+		margin: 3%;
+		display: inline-flex;
+		border-radius: 14px;
+	}
+
 	#introduction {
 		background-color: var(--yellow);
 		color: var(--grey);
@@ -51,6 +136,7 @@
 		width: 40%;
 		user-select: none;
 		font-size: 1.2rem;
+		z-index: 999;
 	}
 	#span-1 {
 		font-weight: 750;
@@ -69,48 +155,6 @@
 		-webkit-text-decoration-style: wavy;
 		color: var(--violet);
 	}
-	.image-container {
-		width: 60%;
-		position: relative;
-	}
-	.img-main {
-		margin-left: auto;
-		margin-right: auto;
-		object-fit: cover;
-		width: 450px;
-		height: 450px;
-		border-radius: 100%;
-		background-position: 20% center;
-	}
-	.img-small {
-		position: absolute;
-		border-radius: 100%;
-		object-fit: cover;
-		width: 150px;
-		height: 150px;
-	}
-	#small-1 {
-		top: -100px;
-		left: 0;
-		width: 25%;
-	}
-	#small-2 {
-		top: -100px;
-		right: 0;
-		width: 25%;
-	}
-	#small-3 {
-		bottom: -150px;
-		left: 100px;
-	}
-	#small-4 {
-		top: -160px;
-		left: 220px;
-	}
-	#small-5 {
-		bottom: -150px;
-		right: 100px;
-	}
 	.wave {
 		width: 100%;
 		height: 60px;
@@ -128,6 +172,9 @@
 			padding-left: 5%;
 			padding-right: 5%;
 		}
+		#slide-1 {
+			display: none;
+		}
 	}
 	@media (max-width: 768px) {
 		#span-1 {
@@ -138,6 +185,15 @@
 		}
 		.text-container {
 			font-size: 1rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		#slide-1 {
+			display: none;
+		}
+		#slide-3 {
+			display: none;
 		}
 	}
 </style>
