@@ -81,3 +81,16 @@ a:visited {
 #apply:hover {
 	text-decoration: none;
 }
+
+hr {
+	border: 0;
+	border-top: 1px solid;
+	border-radius: 5px;
+	width: 60%;
+}
+
+h2 {
+	font-weight: 750;
+	font-size: 2rem;
+	line-height: 1.8em;
+}

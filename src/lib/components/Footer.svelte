@@ -159,9 +159,6 @@
 		background-image: url('$lib/assets/envelope-solid.svg');
 	}
 	hr {
-		border-top: 1px solid;
-		border-radius: 5px;
-		width: 60%;
 		margin: 10px 0;
 	}
 	p {

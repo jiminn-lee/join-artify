@@ -7,9 +7,8 @@
 		<div class="card">
 			<h1>Website Builder Head</h1>
 			<ul class="card-list">
-				<li>Bullet Point 1</li>
-				<li>Bullet Point 2</li>
-				<li>Bullet Point 3</li>
+				<li>Create the general idea for the website and work with a group to accomplish it</li>
+				<li>Develop leadership abilities</li>
 			</ul>
 		</div>
 		<div class="card">
@@ -80,13 +79,14 @@
 		height: 400px;
 		border-radius: 40px;
 		transition: 0.2s;
+		line-height: 1.5rem;
 	}
 	.card:hover {
 		transform: translateY(-5px);
 	}
 	.asterisk {
 		color: var(--red-dark);
-		margin: 30px 0 0 30px;
+		margin: 10px 0 0 20px;
 		font-size: 2rem;
 		user-select: none;
 	}
@@ -98,6 +98,7 @@
 		user-select: none;
 		padding: 0 25px;
 		margin: 80px 0 50px 0;
+		line-height: 1.8rem;
 	}
 	.special-h1 {
 		margin-top: 30px !important;

@@ -2,7 +2,11 @@
 	import blueWaves from '$lib/assets/blueWaves.svg';
 </script>
 
-<section id="benefits" />
+<section id="benefits">
+	<div class="benefit-container">
+		<div class="text-container">Test</div>
+	</div>
+</section>
 <img src={blueWaves} alt="" class="wave" />
 
 <style>

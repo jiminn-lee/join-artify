@@ -6,7 +6,7 @@
 <section id="about-us">
 	<img src={path} alt="" class="path" />
 	<div class="about-us-text-container">
-		<h1>About Artify</h1>
+		<h2>About Artify</h2>
 		<p>
 			Artify4Kids is a <span>non-profit</span> organization that aims to provide accessible
 			<span>arts and crafts</span>
@@ -17,7 +17,6 @@
 		</p>
 		<hr />
 	</div>
-
 	<div class="text-container">
 		<iframe
 			title="Bay Area Map"
@@ -27,14 +26,14 @@
 			style="border:none;"
 		/>
 		<div class="text">
-			<h1>Where?</h1>
+			<h2>Where?</h2>
 			<p>Artify is based in the <span>Bay Area</span></p>
 		</div>
 	</div>
 	<div class="text-container" id="right">
 		<img src="/photos/how-we-work.webp" alt="" class="photo" id="hidden" />
 		<div class="text">
-			<h1>How We Work</h1>
+			<h2>How We Work</h2>
 			<p>
 				We have weekely meetings to discuss current and future plans. Join us as we plan and carry
 				out each <span>fundraiser</span>, <span>community events</span>, and
@@ -111,19 +110,11 @@
 	span {
 		color: var(--violet);
 	}
-	h1 {
-		font-weight: 750;
-		font-size: 2rem;
-		line-height: 1.8em;
-	}
 	p {
 		line-height: 1.5rem;
 		margin-bottom: 20px;
 	}
 	hr {
-		border: 0;
-		border-top: 1px solid black;
-		width: 60%;
 		margin: auto;
 	}
 	.path {
