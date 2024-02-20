@@ -24,6 +24,7 @@
 			width="100%"
 			height="600px"
 			style="border:none;"
+			class="photo"
 		/>
 		<div class="text">
 			<h2>Where?</h2>
@@ -92,12 +93,12 @@
 		border-radius: 18px;
 		margin-left: 40px;
 		margin-right: 40px;
+		transition: 0.5s;
+	}
+	.photo:hover {
+		transform: scale(105%);
 	}
 	iframe {
-		width: 40%;
-		border-radius: 18px;
-		margin-left: 40px;
-		margin-right: 40px;
 		height: 200px;
 	}
 	#right {
@@ -171,15 +172,12 @@
 		.text-container {
 			width: 90%;
 		}
-		#about-us {
-			font-size: 1rem;
-		}
-		h1 {
-			font-size: 1.8rem;
-		}
 		.text-container {
 			margin-bottom: 85px;
 			margin-top: 85px;
+		}
+		h2 {
+			font-size: 1.8rem;
 		}
 	}
 	@media (max-width: 640px) {

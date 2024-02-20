@@ -71,7 +71,9 @@
 				rel="noopener noreferrer">Jimin L.</a
 			>
 			&
-			<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Sam M.</a>
+			<a href="https://www.instagram.com/sam.ethanmathew/" target="_blank" rel="noopener noreferrer"
+				>Sam M.</a
+			>
 		</p>
 	</div>
 </div>
@@ -87,7 +89,7 @@
 		margin-top: -20px;
 	}
 	.footer {
-		height: 300px;
+		height: 310px;
 		padding: 40px 20% 12px 20%;
 		background-color: white;
 		font-weight: 500;
@@ -190,7 +192,7 @@
 		}
 		.menu-item,
 		.special-item {
-			font-size: 0.8rem;
+			font-size: 0.6rem;
 		}
 		p {
 			font-size: 0.6rem;
