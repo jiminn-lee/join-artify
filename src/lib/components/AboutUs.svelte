@@ -211,5 +211,8 @@
 		.text {
 			width: 100%;
 		}
+		#about-us {
+			height: 1100px;
+		}
 	}
 </style>

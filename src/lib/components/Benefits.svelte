@@ -211,7 +211,16 @@
 		.slide-container {
 			display: none;
 		}
+		.img-container {
+			width: 60%;
+		}
+		#benefits {
+			height: 1300px;
+		}
 	}
 	@media (max-width: 475px) {
+		.img-container {
+			width: 70%;
+		}
 	}
 </style>
