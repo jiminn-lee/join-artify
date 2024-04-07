@@ -28,7 +28,7 @@
 		/>
 		<div class="text">
 			<h2>Where?</h2>
-			<p>Artify is based in the <span>Bay Area</span></p>
+			<p>Artify is based in the <span>Bay Area.</span></p>
 		</div>
 	</div>
 	<div class="text-container" id="right">
@@ -46,7 +46,7 @@
 	<div class="clear" />
 	<div class="btn-container">
 		<a
-			href="https://artify4kids.wixsite.com/my-site/about"
+			href="https://artify4kids.wixsite.com/website/about"
 			target="_blank"
 			rel="noopener noreferrer"
 			id="apply"><button class="btn">Learn More</button></a
@@ -61,11 +61,13 @@
 	}
 	button {
 		width: 160px;
+		z-index: 99;
 	}
 	.btn-container {
 		display: flex;
 		justify-content: center;
 		margin-top: 40px;
+		z-index: 999;
 	}
 	a {
 		color: var(--violet);
@@ -128,6 +130,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		overflow: hidden;
+		z-index: 0;
 	}
 	.clear {
 		clear: both;

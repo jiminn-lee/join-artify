@@ -6,18 +6,18 @@
 	<div class="slide-container">
 		<div class="slide" style="--t:80s">
 			<div>
-				<img src="/photos/colby-1.png" alt="" class="colby" id="colby-1" />
-				<img src="/photos/colby-2.png" alt="" class="colby" id="colby-2" />
-				<img src="/photos/colby-3.png" alt="" class="colby" id="colby-3" />
-				<img src="/photos/colby-4.png" alt="" class="colby" id="colby-4" />
-				<img src="/photos/colby-5.png" alt="" class="colby" id="colby-5" />
+				<img src="/photos/colby-1.webp" alt="" class="colby" id="colby-1" />
+				<img src="/photos/colby-2.webp" alt="" class="colby" id="colby-2" />
+				<img src="/photos/colby-3.webp" alt="" class="colby" id="colby-3" />
+				<img src="/photos/colby-4.webp" alt="" class="colby" id="colby-4" />
+				<img src="/photos/colby-5.webp" alt="" class="colby" id="colby-5" />
 			</div>
 			<div>
-				<img src="/photos/colby-1.png" alt="" class="colby" id="colby-1" />
-				<img src="/photos/colby-2.png" alt="" class="colby" id="colby-2" />
-				<img src="/photos/colby-3.png" alt="" class="colby" id="colby-3" />
-				<img src="/photos/colby-4.png" alt="" class="colby" id="colby-4" />
-				<img src="/photos/colby-5.png" alt="" class="colby" id="colby-5" />
+				<img src="/photos/colby-1.webp" alt="" class="colby" id="colby-1" />
+				<img src="/photos/colby-2.webp" alt="" class="colby" id="colby-2" />
+				<img src="/photos/colby-3.webp" alt="" class="colby" id="colby-3" />
+				<img src="/photos/colby-4.webp" alt="" class="colby" id="colby-4" />
+				<img src="/photos/colby-5.webp" alt="" class="colby" id="colby-5" />
 			</div>
 		</div>
 	</div>
@@ -58,18 +58,18 @@
 	<div class="slide-container">
 		<div class="slide" style="--t:80s">
 			<div>
-				<img src="/photos/colby-5.png" alt="" class="colby" id="colby-5" />
-				<img src="/photos/colby-4.png" alt="" class="colby" id="colby-4" />
-				<img src="/photos/colby-3.png" alt="" class="colby" id="colby-3" />
-				<img src="/photos/colby-2.png" alt="" class="colby" id="colby-2" />
-				<img src="/photos/colby-1.png" alt="" class="colby" id="colby-1" />
+				<img src="/photos/colby-5.webp" alt="" class="colby" id="colby-5" />
+				<img src="/photos/colby-4.webp" alt="" class="colby" id="colby-4" />
+				<img src="/photos/colby-3.webp" alt="" class="colby" id="colby-3" />
+				<img src="/photos/colby-2.webp" alt="" class="colby" id="colby-2" />
+				<img src="/photos/colby-1.webp" alt="" class="colby" id="colby-1" />
 			</div>
 			<div>
-				<img src="/photos/colby-5.png" alt="" class="colby" id="colby-5" />
-				<img src="/photos/colby-4.png" alt="" class="colby" id="colby-4" />
-				<img src="/photos/colby-3.png" alt="" class="colby" id="colby-3" />
-				<img src="/photos/colby-2.png" alt="" class="colby" id="colby-2" />
-				<img src="/photos/colby-1.png" alt="" class="colby" id="colby-1" />
+				<img src="/photos/colby-5.webp" alt="" class="colby" id="colby-5" />
+				<img src="/photos/colby-4.webp" alt="" class="colby" id="colby-4" />
+				<img src="/photos/colby-3.webp" alt="" class="colby" id="colby-3" />
+				<img src="/photos/colby-2.webp" alt="" class="colby" id="colby-2" />
+				<img src="/photos/colby-1.webp" alt="" class="colby" id="colby-1" />
 			</div>
 		</div>
 	</div>
