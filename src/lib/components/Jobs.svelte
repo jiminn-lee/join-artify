@@ -48,9 +48,7 @@
 	</div>
 	<p>* These require less commitment</p>
 	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSewG6jXziVNkJgq_NvmdvO5BirikFQCoull85WH2_VK2Cec1g/viewform"
-		target="_blank"
-		rel="noopener noreferrer"
+		href="/apply"
 		id="apply"><button class="btn">Apply</button></a
 	>
 </section>
