@@ -12,6 +12,10 @@
 	}
 	// Change the word every second
 	setInterval(updateWord, 1000);
+
+	let imageSet1 = ['/photos/portrait-1.webp', '/photos/portrait-2.webp', '/photos/portrait-3.webp', '/photos/portrait-4.webp'];
+	let imageSet2 = ['/photos/portrait-5.webp', '/photos/portrait-6.webp', '/photos/portrait-7.webp', '/photos/portrait-8.webp', '/photos/portrait-9.webp']
+	let imageSet3 = ['/photos/portrait-10.webp', '/photos/portrait-11.webp', '/photos/portrait-12.webp', '/photos/portrait-13.webp'];
 </script>
 
 <!-- Introduction section -->
@@ -35,48 +39,40 @@
 		<!-- Slide 1 -->
 		<div class="slide" style="--t:60s" id="slide-1">
 			<div>
-				<img src="/photos/portrait-1.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-2.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-3.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-4.webp" alt="" class="portrait" />
+				for {#each imageSet1 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 			<div>
-				<img src="/photos/portrait-1.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-2.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-3.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-4.webp" alt="" class="portrait" />
+				for {#each imageSet1 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 		</div>
 		<!-- Slide 2 -->
 		<div class="slide" style="--t:50s" id="slide-2">
 			<div>
-				<img src="/photos/portrait-5.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-6.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-7.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-8.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-9.webp" alt="" class="portrait" />
+				for {#each imageSet2 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 			<div>
-				<img src="/photos/portrait-5.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-6.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-7.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-8.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-9.webp" alt="" class="portrait" />
+				for {#each imageSet2 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 		</div>
 		<!-- Slide 3 -->
 		<div class="slide" style="--t:60s" id="slide-3">
 			<div>
-				<img src="/photos/portrait-10.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-11.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-12.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-13.webp" alt="" class="portrait" />
+				for {#each imageSet3 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 			<div>
-				<img src="/photos/portrait-10.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-11.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-12.webp" alt="" class="portrait" />
-				<img src="/photos/portrait-13.webp" alt="" class="portrait" />
+				for {#each imageSet3 as img}
+					<img src={img} alt="" class="portrait">
+				{/each}
 			</div>
 		</div>
 	</div>

@@ -178,4 +178,11 @@
 		align-items: center;
 		background-color: var(--yellow);
 	}
+
+	@media (max-width: 640px) {
+		form {
+			width: 90%;
+		}
+		
+	}
 </style>
