@@ -185,4 +185,18 @@
 		}
 		
 	}
+
+	@media (max-width: 455px) {
+		.form-group input[type='text'],
+	.form-group input[type='email'],
+	.form-group input[type='tel'] {
+		width: 350px;
+	}
+	.options {
+		margin-left: 120px;
+	}
+	.form-group textarea {
+		width: 350px;
+	}
+	}
 </style>
