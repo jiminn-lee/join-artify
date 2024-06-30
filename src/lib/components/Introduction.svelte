@@ -39,12 +39,12 @@
 		<!-- Slide 1 -->
 		<div class="slide" style="--t:60s" id="slide-1">
 			<div>
-				for {#each imageSet1 as img}
+				{#each imageSet1 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
 			<div>
-				for {#each imageSet1 as img}
+				{#each imageSet1 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
@@ -52,12 +52,12 @@
 		<!-- Slide 2 -->
 		<div class="slide" style="--t:50s" id="slide-2">
 			<div>
-				for {#each imageSet2 as img}
+				{#each imageSet2 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
 			<div>
-				for {#each imageSet2 as img}
+				{#each imageSet2 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
@@ -65,12 +65,12 @@
 		<!-- Slide 3 -->
 		<div class="slide" style="--t:60s" id="slide-3">
 			<div>
-				for {#each imageSet3 as img}
+				{#each imageSet3 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
 			<div>
-				for {#each imageSet3 as img}
+				{#each imageSet3 as img}
 					<img src={img} alt="" class="portrait">
 				{/each}
 			</div>
