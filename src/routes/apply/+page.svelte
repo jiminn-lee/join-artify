@@ -172,11 +172,16 @@
 	}
 
 	#apply {
-		height: 1000px;
+		height: 1200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background-color: var(--yellow);
+	}
+
+	form {
+		margin-top: 150px;
+		margin-bottom: 150px;
 	}
 
 	@media (max-width: 640px) {
@@ -190,13 +195,13 @@
 		.form-group input[type='text'],
 	.form-group input[type='email'],
 	.form-group input[type='tel'] {
-		width: 350px;
+		width: 100%;
 	}
 	.options {
 		margin-left: 120px;
 	}
 	.form-group textarea {
-		width: 350px;
+		width: 100%;
 	}
 	}
 </style>
